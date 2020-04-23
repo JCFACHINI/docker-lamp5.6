@@ -23,7 +23,6 @@ RUN chown -R www-data:www-data /var/www/html
 RUN echo debconf mysql-server/root_password password 1234 | debconf-set-selections
 RUN echo debconf mysql-server/root_password_again password 1234 | debconf-set-selections
 RUN apt install mysql-server mysql-client -y -q
-RUN service mysql start
 
 RUN apt-get install vim -y
 
