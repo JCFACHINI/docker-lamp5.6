@@ -29,3 +29,7 @@ RUN apt-get install vim -y
 EXPOSE 80
 EXPOSE 3306
 
+COPY run-lamp.sh /usr/sbin/
+RUN chmod +x /usr/sbin/run-lamp.sh
+
+CMD ["/usr/sbin/run-lamp.sh"]
