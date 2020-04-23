@@ -29,4 +29,3 @@ RUN apt-get install vim -y
 EXPOSE 80
 EXPOSE 3306
 
-RUN /usr/sbin/apachectl -DFOREGROUND -k start -e debug
